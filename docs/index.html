@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack - Vite</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script type="module" crossorigin src="/assets/index-0789febb.js"></script>
+    <link rel="stylesheet" href="/assets/index-8987da3f.css">
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="game-result" id="gameResult">
+      <h2 id="resultTitle"></h2>
+      <p id="resultMessage"></p>
+      <button class="btn btn-light" onclick="closeResult()">Continuar</button>
+    </div>
+
+    <header class="titulo">🃏 Blackjack</header>
+
+    <div class="container-fluid">
+      <div class="game-controls">
+        <button id="btnNuevo" class="btn btn-danger">🔄 Nuevo juego</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-primary d-none">
+          🎯 Pedir carta
+        </button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-warning d-none">
+          🛑 Detener
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="player-section">
+            <h2 class="player-title">
+              👤 Jugador - <span class="points">0</span>
+            </h2>
+            <div id="jugador-cartas" class="divCartas"></div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="player-section">
+            <h2 class="player-title">
+              🤖 Computadora - <span class="points">0</span>
+            </h2>
+            <div id="computadora-cartas" class="divCartas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="app"></div>
+    
+  </body>
+</html>
